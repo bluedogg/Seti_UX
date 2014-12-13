@@ -22,28 +22,28 @@
                 <key>background</key>
                 <string>#151718</string>
                 <key>foreground</key>
-                <string>#D8F6FF</string>
+                <string>#d4d7d6</string>
 
                 <key>caret</key>
-                <string>#fed02e</string>
+                <string>#ffe792</string>
                 <key>invisibles</key>
                 <string>#F3FFB51A</string>
                 <key>lineHighlight</key>
-                <string>#101112</string>
+                <string>#222528</string>
 
                 <key>findHighlight</key>
                 <string>#4FA5C7</string>
                 <key>inactiveSelection</key>
-                <string>#2F6277</string>
+                <string>#132b35</string>
                 <key>gutter</key>
                 <string>#0D1011</string>
                 <key>gutterForeground</key>
-                <string>#2B3337</string>
+                <string>#3c474d</string>
 
                 <key>selection</key>
-                <string>#4FA5C7</string>
-                <key>selectionForeground</key>
-                <string>#fefefe</string>
+                <string>#1c3c4a</string>
+                <!-- <key>selectionForeground</key>
+                <string>#fefefe</string> -->
 
                 <key>bracketContentsOptions</key>
                 <string>underline</string>
