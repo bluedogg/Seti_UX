@@ -795,6 +795,7 @@
         </dict>
 
         <!-- strings -->
+        <!-- Текст -->
         <dict>
             <key>name</key>
             <string>string main</string>
@@ -803,10 +804,11 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#7e99a6</string>
+                <string>#c5d8e2</string>
             </dict>
         </dict>
 
+        <!-- class="[string]" style="[string]" -->
         <dict>
             <key>name</key>
             <string>class="string"</string>
@@ -815,7 +817,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#dff3fd</string>
+                <string>#ffd200</string>
             </dict>
         </dict>
 
@@ -839,7 +841,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#dff3fd</string>
+                <string>#ffd200</string>
             </dict>
         </dict>
 
@@ -851,7 +853,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#dff3fd</string>
+                <string>#ffd200</string>
             </dict>
         </dict>
 
@@ -2793,13 +2795,14 @@
         </dict>
 
         <!-- (function) -->
+        <!-- Круглые скобки аргументов функции -->
         <dict>
             <key>scope</key>
             <string>punctuation.definition.parameters, variable.parameter.function.js punctuation.separator.object</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#02AEFF</string>
+                <string>#00ffb3</string>
             </dict>
         </dict>
 
