@@ -1864,16 +1864,28 @@
             </dict>
         </dict>
 
-        <!-- #colorhex -->
+        <!-- colorhex -->
         <dict>
             <key>scope</key>
-            <string>constant.other.color.rgb-value.css, meta.property-value.css constant.other.color.rgb-value.css, constant.other.color.rgb-value.css punctuation.definition.constant.css, meta.property-value.css constant.other.color.rgb-value.css punctuation.definition.constant.css</string>
+            <string>constant.other.color.rgb-value.css, meta.property-value.css constant.other.color.rgb-value.css</string>
             <key>settings</key>
             <dict>
-                <key>foreground</key>
-                <string>#1CFF7B</string>
+               <key>foreground</key>
+                <string>#D8F6FF</string>
             </dict>
         </dict>
+
+        <!-- #-colorhex -->
+        <dict>
+            <key>scope</key>
+            <string>constant.other.color.rgb-value.css punctuation.definition.constant.css</string>
+            <key>settings</key>
+            <dict>
+                 <key>foreground</key>
+                <string>#fccc2c</string>
+            </dict>
+        </dict>
+
         <dict>
             <key>name</key>
             <string>CSS: @import</string>
@@ -2012,7 +2024,7 @@
             <key>name</key>
             <string>property-name:</string>
             <key>scope</key>
-            <string>meta.property-value.css punctuation.separator.key-value.css</string>
+            <string>meta.property-value.css punctuation.separator.key-value.css, punctuation.separator.key-value.css</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -2024,7 +2036,17 @@
             <key>name</key>
             <string>CSS: property-value</string>
             <key>scope</key>
-            <string>meta.property-group support.constant.property-value.css, meta.property-value support.constant.property-value.css</string>
+            <string>meta.value.css support.type.property-name.css</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#D8F6FF</string>
+            </dict>
+        </dict>
+
+        <dict>
+            <key>scope</key>
+            <string>support.constant.property-value.css</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -2057,12 +2079,12 @@
             </dict>
         </dict>
 
-        <!-- [temp solution] -->
+        <!-- [...] -->
         <dict>
             <key>name</key>
-            <string>CSS: selector []</string>
+            <string>CSS: attribute-name</string>
             <key>scope</key>
-            <string>meta.selector.css meta.attribute-selector.css, meta.selector.css meta.attribute-selector.css punctuation.definition.entity.css</string>
+            <string>entity.other.attribute-name.css, entity.other.attribute-name.attribute.css</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -2086,7 +2108,7 @@
         <!-- = -->
         <dict>
             <key>scope</key>
-            <string>meta.selector.css meta.attribute-selector.css punctuation.separator.operator.css</string>
+            <string>punctuation.separator.operator.css, keyword.operator.attribute.css</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -2220,6 +2242,21 @@
             <dict>
                 <key>foreground</key>
                 <string>#02AEFF</string>
+                <key>background</key>
+                <string>#02AEFF10</string>
+            </dict>
+        </dict>
+
+        <!-- css3 -->
+        <dict>
+            <key>name</key>
+            <string>inside Quotes</string>
+            <key>scope</key>
+            <string>meta.selector.css string.quoted.double.css, meta.selector.css string.quoted.double.css punctuation.definition.string.begin.css, meta.selector.css string.quoted.double.css punctuation.definition.string.end.css</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#D8F6FF</string>
                 <key>background</key>
                 <string>#02AEFF10</string>
             </dict>
@@ -3393,7 +3430,7 @@
         <!-- , -->
         <dict>
             <key>scope</key>
-            <string>meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.separator.dictionary.pair.json</string>
+            <string>punctuation.separator.dictionary.pair.json</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -3401,21 +3438,21 @@
             </dict>
         </dict>
 
-        <!-- [...] -->
+        <!-- : -->
         <dict>
             <key>scope</key>
-            <string>meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json punctuation.definition.array.begin.json, meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json punctuation.definition.array.end.json</string>
+            <string>punctuation.separator.dictionary.key-value.json</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string></string>
+                <string>#fff</string>
             </dict>
         </dict>
 
-        <!-- [.2.] -->
+        <!-- [...] -->
         <dict>
             <key>scope</key>
-            <string>meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json punctuation.definition.array.begin.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json punctuation.definition.array.end.json</string>
+            <string>punctuation.definition.array.begin.json, punctuation.definition.array.end.json</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -3910,30 +3947,69 @@
         <!-- ====================================
         Markup
         ====================================== -->
+
+        <!-- ```...``` -->
         <dict>
-            <key>name</key>
-            <string>Raw Markup</string>
             <key>scope</key>
-            <string>markup.raw, markup.raw punctuation</string>
+            <string>markup.raw punctuation</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#02AEFF</string>
+                <string>#66828E</string>
+            </dict>
+        </dict>
+
+        <!-- ```lang -->
+        <dict>
+            <key>scope</key>
+            <string>variable.language.fenced.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>bold italic</string>
+                <key>foreground</key>
+                <string>#66828E</string>
+                <key>background</key>
+                <string>#151718</string>
+                <!-- <string>#00000020</string> -->
+            </dict>
+        </dict>
+
+        <!-- ```code``` -->
+        <dict>
+            <key>scope</key>
+            <string>markup.raw.block.fenced.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#D8F6FF</string>
+                <!-- <key>background</key>
+                <string>#00000020</string> -->
+            </dict>
+        </dict>
+
+        <!-- ```json "..."``` -->
+        <dict>
+            <key>scope</key>
+            <string>markup.raw.block.markdown markup.raw.block.fenced.markdown meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#66828E</string>
             </dict>
         </dict>
 
         <dict>
-            <key>name</key>
-            <string>Raw Markup</string>
             <key>scope</key>
-            <string>markup.list meta.paragraph.list.markdown</string>
+            <string>markup.list meta.paragraph.list.markdown, meta.paragraph.markdown</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#efefef</string>
+                <string>#fff</string>
             </dict>
         </dict>
 
+        <!-- (link) -->
         <dict>
             <key>name</key>
             <string>Markup Link</string>
@@ -3942,33 +4018,31 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#93C0C6</string>
+                <string>#13FFA3</string>
             </dict>
         </dict>
 
+        <!-- ! -->
         <dict>
-            <key>name</key>
-            <string>Markup Link</string>
             <key>scope</key>
             <string>meta.paragraph.markdown meta.image.inline.markdown</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#7F29C4</string>
+                <string>#13FFA3</string>
             </dict>
         </dict>
 
+        <!-- [...]() -->
         <dict>
             <key>name</key>
             <string>Markup Link Text</string>
             <key>scope</key>
-            <string>string.other.link.title, meta.paragraph.markdown meta.image.inline.markdown string.other.link.description.markdown</string>
+            <string>string.other.link.description.markdown, string.other.link.title.markdown</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#11FF09</string>
-                <key>background</key>
-                <string>#11FF0910</string>
+                <string>#CD3F45</string>
             </dict>
         </dict>
 
@@ -3980,7 +4054,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#50696C</string>
+                <string>#6288a1</string>
             </dict>
         </dict>
         <dict>
@@ -4002,7 +4076,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#FF1E00</string>
+                <string>#695f54</string>
             </dict>
         </dict>
 
@@ -4032,13 +4106,15 @@
 
         <dict>
             <key>name</key>
-            <string>Markdown Background</string>
+            <string>``inline``</string>
             <key>scope</key>
-            <string>markup.raw.block.markdown, markup.raw.inline.markdown</string>
+            <string>markup.raw.inline.markdown, markup.raw.inline.markdown punctuation.definition.raw.markdown</string>
             <key>settings</key>
             <dict>
+                <key>foreground</key>
+                <string>#02AEFF</string>
                 <key>background</key>
-                <string>#262626</string>
+                <string>#02AEFF10</string>
             </dict>
         </dict>
 
@@ -4050,9 +4126,7 @@
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
-                <string></string>
-                <key>foreground</key>
-                <string>#FF9303</string>
+                <string>bold</string>
             </dict>
         </dict>
         <dict>
@@ -4072,15 +4146,13 @@
             <key>name</key>
             <string>Heading Markup</string>
             <key>scope</key>
-            <string>markup.heading, markup.heading punctuation</string>
+            <string>markup.heading, markup.heading.markdown</string>
             <key>settings</key>
             <dict>
-                <key>fontStyle</key>
-                <string></string>
+               <key>foreground</key>
+                <string>#fda100</string>
                 <key>background</key>
-                <string>#00000030</string>
-                <key>foreground</key>
-                <string>#FFAF4D</string>
+                <string>#CD3F4530</string>
             </dict>
         </dict>
 
