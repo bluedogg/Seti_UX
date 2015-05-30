@@ -2,16 +2,18 @@
 
 Seti Improved Scheme/Syntax-HL for ST.
 
+===
+
 ### Supported Syntax
 ```
 SublimeLinter
 GitGutter
-MarkDown
+Markup
 diff
 plist
 Python
 JSON, XML
-JS (& JavaScriptNext), Coffee
+JS, Coffee
 Html, Jade
 Css, Less, Sass/Scss
 PHP, Laravel Blade, SQL
@@ -23,62 +25,7 @@ PHP, Laravel Blade, SQL
 
 - plz check [#2](https://github.com/ctf0/Seti_UX/issues/2).
 
-## Previews
-
-**HTML**
-
-![Seti Screenshot](./ss/html.png)
-
-**CSS**
-
-![Seti Screenshot](./ss/css.png)
-
-**JS** (work in progress)
-
-![Seti Screenshot](./ss/js.png)
-
-**LESS** (Sass/Scss are similar)
-
-![Seti Screenshot](./ss/less.png)
-
-**BLADE**
-
-![Seti Screenshot](./ss/blade.png)
-
-**PHP**
-
-![Seti Screenshot](./ss/php.png)
-
-**DIFF**
-
-![Seti Screenshot](./ss/diff.png)
-
-**JADE**
-
-![Seti Screenshot](./ss/jade.png)
-
-**PYTHON**
-
-![Seti Screenshot](./ss/python.png)
-
-**MARKDOWN**
-
-![Seti Screenshot](./ss/md.png)
-
-**JSON** (up-to 13 level)
-
-![Seti Screenshot](./ss/json.png)
-
-**XML**
-
-![Seti Screenshot](./ss/xml.png)
-
-**PLIST**
-
-![Seti Screenshot](./ss/plist.png)
-
-
-## ToDO
+### ToDO
 
 1. Better support for AngularJs.
 
@@ -86,4 +33,6 @@ PHP, Laravel Blade, SQL
 
 3. Better support for Python.
 
-4. Cleanup the scheme file and make it smaller.
+4. Add some previews. (any Help is highly appreciated).
+
+5. Cleanup the scheme file and make it smaller.

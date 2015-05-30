@@ -170,17 +170,6 @@
             </dict>
         </dict>
 
-        <!-- "&&" -->
-        <dict>
-            <key>scope</key>
-            <string>string.quoted.double.html invalid.illegal.bad-ampersand.html</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#ffd200</string>
-            </dict>
-        </dict>
-
         <dict>
             <key>scope</key>
             <string>invalid.deprecated</string>
@@ -580,7 +569,7 @@
             <key>name</key>
             <string>Support function</string>
             <key>scope</key>
-            <string>support.function, support.class, support.function.firebug.js</string>
+            <string>support.function, support.class</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -629,17 +618,8 @@
             </dict>
         </dict>
         <dict>
-            <key>scope</key>
-            <string>string.regexp</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#95a5a6</string>
-                <key>background</key>
-                <string>#ecf0f150</string>
-            </dict>
-        </dict>
-        <dict>
+            <key>name</key>
+            <string>String constant</string>
             <key>scope</key>
             <string>string constant</string>
             <key>settings</key>
@@ -661,7 +641,7 @@
                 <string>#EBFF59</string>
             </dict>
         </dict>
-        <!--<dict>
+        <dict>
             <key>name</key>
             <string>String.regexp</string>
             <key>scope</key>
@@ -671,7 +651,7 @@
                 <key>foreground</key>
                 <string>#FFE4A6</string>
             </dict>
-        </dict>-->
+        </dict>
         <dict>
             <key>name</key>
             <string>String variable</string>
@@ -713,19 +693,6 @@
             </dict>
         </dict>
 
-        <!-- < > -->
-        <dict>
-            <key>name</key>
-            <string>Tag Punctuation</string>
-            <key>scope</key>
-            <string>punctuation.definition.tag</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-            </dict>
-        </dict>
-
         <!-- ====================================
         HTML
         ====================================== -->
@@ -734,17 +701,6 @@
         <dict>
             <key>scope</key>
             <string>meta.tag.inline.any.html, meta.tag.block.any.html, meta.tag.other.html meta.attribute-with-value.id.html punctuation.separator.key-value.html, meta.tag.block.any.html meta.attribute-with-value.id.html punctuation.separator.key-value.html, meta.tag.any.html, meta.tag.inline.any.html meta.attribute-with-value.id.html punctuation.separator.key-value.html, meta.tag.other.html, meta.tag.any.html meta.attribute-with-value.id.html punctuation.separator.key-value.html, meta.tag.structure.any.html</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#009FFF</string>
-            </dict>
-        </dict>
-
-        <!-- id= -->
-        <dict>
-            <key>scope</key>
-            <string>meta.tag.structure.any.html meta.attribute-with-value.id.html punctuation.separator.key-value.html</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -774,19 +730,6 @@
             <dict>
                 <key>foreground</key>
                 <string>#009FFF</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>name</key>
-            <string>main tags (body,header,etc)</string>
-            <key>scope</key>
-            <string>meta.tag.other.html entity.name.tag.other.html, meta.tag.structure.any.html entity.name.tag.structure.any.html</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#A83B40</string>
-                <key>background</key>
-                <string>#A83B4010</string>
             </dict>
         </dict>
 
@@ -824,29 +767,6 @@
             <dict>
                 <key>foreground</key>
                 <string>#1CFF7B</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>name</key>
-            <string>style attr="..."</string>
-            <key>scope</key>
-            <string>meta.tag.style.html string.quoted.double.html</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#009FFF</string>
-            </dict>
-        </dict>
-
-        <dict>
-            <key>name</key>
-            <string>style attr=</string>
-            <key>scope</key>
-            <string>meta.tag.style.html</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
             </dict>
         </dict>
 
@@ -960,16 +880,6 @@
             </dict>
         </dict>
 
-        <!-- style type= / } / strings-->
-        <dict>
-            <key>scope</key>
-            <string>source.css.embedded.html</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#d3f0f5</string>
-            </dict>
-        </dict>
         <dict>
             <key>name</key>
             <string>id=""</string>
@@ -1021,179 +931,20 @@
             </dict>
         </dict>
 
-        <!-- <script> -->
-        <dict>
-            <key>scope</key>
-            <string>source.js.embedded.html entity.name.tag.script.html, meta.tag.script.html entity.name.tag.script.html</string>
-            <key>settings</key>
-            <dict>
-                <key>fontStyle</key>
-                <string>italic</string>
-                <key>foreground</key>
-                <string>#A83B40</string>
-                <key>background</key>
-                <string>#A83B4010</string>
-            </dict>
-        </dict>
-
-        <!-- script src -->
-        <dict>
-            <key>scope</key>
-            <string>source.js.embedded.html entity.other.attribute-name.html, meta.tag.script.html entity.other.attribute-name.html</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#48FFC2</string>
-            </dict>
-        </dict>
-
-        <!-- script src= -->
-        <dict>
-            <key>scope</key>
-            <string>text.html.basic source.js.embedded.html, meta.tag.script.html</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#009FFF</string>
-            </dict>
-        </dict>
-
-        <!-- script src="string"-->
-        <dict>
-            <key>scope</key>
-            <string>meta.tag.script.html string.quoted.double.html</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#009FFF</string>
-            </dict>
-        </dict>
-
-        <!-- src="string"-->
-        <dict>
-            <key>scope</key>
-            <string>source.js.embedded.html string.quoted.double.html</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-            </dict>
-        </dict>
-
-        <!-- src=""-->
-        <dict>
-            <key>scope</key>
-            <string>source.js.embedded.html string.quoted.double.html punctuation.definition.string.begin.html, source.js.embedded.html string.quoted.double.html punctuation.definition.string.end.html </string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#009FFF</string>
-            </dict>
-        </dict>
-
-        <!-- ====================================
-        Js In Html Embed
-        ====================================== -->
-
-        <!-- "..." / '...' -->
-        <dict>
-            <key>scope</key>
-            <string>source.js.embedded.html string.quoted.single.js, source.js.embedded.html string.quoted.single.js punctuation.definition.string.begin.js, source.js.embedded.html string.quoted.single.js punctuation.definition.string.end.js, source.js.embedded.html string.quoted.double.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#02AEFF</string>
-            </dict>
-        </dict>
-
-        <dict>
-            <key>scope</key>
-            <string>source.js.embedded.html keyword.operator.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#1CFF7B</string>
-            </dict>
-        </dict>
-
-        <!-- (this) -->
-        <dict>
-            <key>scope</key>
-            <string>source.js.embedded.html variable.language.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#1CFF7B</string>
-                <key>background</key>
-                <string>#02AEFF30</string>
-            </dict>
-        </dict>
-
-        <dict>
-            <key>scope</key>
-            <string>source.js.embedded.html meta.group.braces.round meta.group.braces.curly meta.group.braces.round meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#D8F6FF80</string>
-            </dict>
-        </dict>
-
-         <!-- {...} -->
+        <!-- main tags (body,header,etc) -->
         <dict>
             <key>name</key>
-            <string>brace.curly embedded</string>
+            <string>Tag</string>
             <key>scope</key>
-            <string>source.js.embedded.html meta.brace.curly.js</string>
+            <string>meta.tag.other.html entity.name.tag.other.html, meta.tag.structure.any.html entity.name.tag.structure.any.html</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#efefef</string>
+                <string>#009FFF</string>
+                <key>background</key>
+                <string></string>
             </dict>
         </dict>
-
-        <!-- (...) -->
-        <dict>
-            <key>scope</key>
-            <string>source.js.embedded.html meta.brace.round.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#02AEFF</string>
-            </dict>
-        </dict>
-
-        <!-- JSN (...) -->
-        <dict>
-            <key>scope</key>
-            <string>meta.tag.script.html source.js.embedded.html meta.brace.round.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-            </dict>
-        </dict>
-
-        <dict>
-            <key>scope</key>
-            <string>meta.tag.script.html meta.function-call.with-arguments.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-            </dict>
-        </dict>
-
-        <dict>
-            <key>scope</key>
-            <string>variable.language.arguments.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-            </dict>
-        </dict>
-
 
         <!-- ====================================
         XML
@@ -1540,19 +1291,6 @@
             <dict>
                 <key>foreground</key>
                 <string>#1CFF7B</string>
-            </dict>
-        </dict>
-
-        <!-- :: -->
-        <dict>
-            <key>name</key>
-            <string>Operator</string>
-            <key>scope</key>
-            <string>keyword.operator.class.php</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#10ff00</string>
             </dict>
         </dict>
 
@@ -2975,6 +2713,8 @@
         JavaScript
         ====================================== -->
         <dict>
+            <key>name</key>
+            <string>Property - JavaScriptNext</string>
             <key>scope</key>
             <string>variable.other.property</string>
             <key>settings</key>
@@ -2984,6 +2724,8 @@
             </dict>
         </dict>
         <dict>
+            <key>name</key>
+            <string>Object - JavaScriptNext</string>
             <key>scope</key>
             <string>variable.other.object</string>
             <key>settings</key>
@@ -2993,6 +2735,8 @@
             </dict>
         </dict>
         <dict>
+            <key>name</key>
+            <string>Constant - JavaScriptNext</string>
             <key>scope</key>
             <string>variable.other.constant</string>
             <key>settings</key>
@@ -3004,6 +2748,8 @@
             </dict>
         </dict>
         <dict>
+            <key>name</key>
+            <string>Node keyword - JavaScriptNext</string>
             <key>scope</key>
             <string>support.keyword.node</string>
             <key>settings</key>
@@ -3025,6 +2771,8 @@
         </dict>
 
         <dict>
+            <key>name</key>
+            <string>keyword.operator.js</string>
             <key>scope</key>
             <string>keyword.operator.js</string>
             <key>settings</key>
@@ -3035,6 +2783,8 @@
         </dict>
 
         <dict>
+            <key>name</key>
+            <string>entity.name.type.object.js.firebug</string>
             <key>scope</key>
             <string>entity.name.type.object.js.firebug</string>
             <key>settings</key>
@@ -3234,282 +2984,6 @@
             </dict>
         </dict>
 
-
-        <!-- ====================================
-        JavaScriptNext
-        ====================================== -->
-        <dict>
-            <key>scope</key>
-            <string>variable.other.readwrite.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-                <!-- <key>background</key>
-                <string>#344a5f50</string> -->
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>entity.name.type.new.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#CD3F45</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>meta.function.json.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>variable.other.constant.js</string>
-            <key>settings</key>
-            <dict>
-                <key>fontStyle</key>
-                <string>italic bold</string>
-                <key>foreground</key>
-                <string>#6b8675</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>meta.group.braces.round meta.group.braces.square meta.function.js variable.parameter.function.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-                <key>background</key>
-                <string>#02AEFF30</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>variable.other.dollar.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-                <key>background</key>
-                <string>#02AEFF30</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>meta.group.braces.curly meta.group.braces.round meta.function.js variable.parameter.function.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-                <key>background</key>
-                <string>#151718</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>variable.parameter.function.js, variable.other.object.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-                <key>background</key>
-                <string>#151718</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>source.js meta.function-call.method.with-arguments.js entity.name.function.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#A83B40</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>meta.function-call.without-arguments.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#735154</string>
-                <key>background</key>
-                <string>#0f0c0d</string>
-                <key>fontStyle</key>
-                <string>italic</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>meta.group.braces.curly meta.function-call.method.with-arguments.js entity.name.function.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#48FFC2</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>meta.function-call.with-arguments.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#6288a1</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>meta.function-call.static.with-arguments.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#a074c4</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>meta.function-call.method.without-arguments.js entity.name.function.js, meta.function-call.method.without-arguments.js meta.group.braces.round.function.arguments.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>meta.property.object.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#aa00aa</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>meta.group.braces.curly variable.language.this.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-                <key>background</key>
-                <string>#151718</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>meta.group.braces.curly meta.group.braces.round variable.language.this.js</string>
-            <key>settings</key>
-            <dict>
-                <key>fontStyle</key>
-                <string>italic</string>
-                <key>foreground</key>
-                <string>#fe5a7d90</string>
-                <key>background</key>
-                <string>#2f041e50</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>support.type.object.dom.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-                <key>background</key>
-                <string>#ff136b50</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>support.type.object.node.js, support.type.object.firebug.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>meta.function-call.static.without-arguments.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>meta.function.static.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>keyword.operator.assignment.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#1CFF7B</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>keyword.control.conditional.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#1cff7b</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>support.class.builtin.js</string>
-            <key>settings</key>
-            <dict>
-                <key>fontStyle</key>
-                <string>italic</string>
-                <key>foreground</key>
-                <string>#fda100</string>
-                <key>background</key>
-                <string>#CD3F4530</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>string.unquoted.label.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>string.unquoted.label.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#fff</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>scope</key>
-            <string>keyword.control.flow.js</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#1CFF7B</string>
-            </dict>
-        </dict>
-
         <!-- ====================================
         Coffee
         ====================================== -->
@@ -3635,9 +3109,9 @@
 
         <dict>
             <key>name</key>
-            <string>JSON - "9 deep"</string>
+            <string>JSON - 9 deep</string>
             <key>scope</key>
-            <string>meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.end.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.end.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.end.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.end.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.end.json, source.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.begin.json, source.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.end.json</string>
+            <string>meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.end.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.end.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.end.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.end.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.end.json</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -3649,7 +3123,7 @@
             <key>name</key>
             <string>JSON - "8 deep"</string>
             <key>scope</key>
-            <string>meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.end.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.end.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.end.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.end.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.end.json, source.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.begin.json, source.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.end.json</string>
+            <string>meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.end.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.end.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json punctuation.definition.string.end.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.end.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.begin.json, meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.array.json meta.structure.dictionary.json string.quoted.double.json punctuation.definition.string.end.json</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -4648,24 +4122,11 @@
             <key>name</key>
             <string>Bold Markup</string>
             <key>scope</key>
-            <string>markup.bold</string>
+            <string>markup.</string>
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
                 <string>bold</string>
-                <key>foreground</key>
-                <string>#fff</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>name</key>
-            <string>Bold Markup</string>
-            <key>scope</key>
-            <string>punctuation.definition.bold.markdown</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#466274</string>
             </dict>
         </dict>
         <dict>
@@ -4964,22 +4425,6 @@
             <dict>
                 <key>foreground</key>
                 <string>#EDBA00</string>
-            </dict>
-        </dict>
-
-        <!-- ====================================
-        C/C++
-        ====================================== -->
-        <!-- SublimeText C++-syntax are a bit inconsistent, correct that -->
-        <dict>
-            <key>name</key>
-            <string>C++ open bracket fix</string>
-            <key>scope</key>
-            <string>punctuation.definition.parameters.c,meta.function-call.c</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#D8F6FF</string>
             </dict>
         </dict>
     </array>
